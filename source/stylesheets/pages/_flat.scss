@@ -17,7 +17,11 @@
 
 /* line 15, /Users/boris/code/lewagon/middleman-airbnb/source/stylesheets/components/_header.scss */
 .header-flat h1 {
-  font-size: 18px;
+  font-size: 30px;
+  margin-top: 0; }
+
+.header-flat h4 {
+  font-size: 25px;
   margin-top: 0; }
 
 /* line 19, /Users/boris/code/lewagon/middleman-airbnb/source/stylesheets/components/_header.scss */
@@ -32,6 +36,20 @@
   padding: 15px;
   border-radius: 3px; }
 
+#body-flat {
+  background: #F5F5F5;
+  padding: 50px 0;
+}
+
+#body-flat p, #body-flat li {
+  font-size: 15px;
+  color: #666666;
+}
+
+#body-flat h2 {
+  font-size: 40px;
+  color: #ee5f5b;
+}
 /* line 1, /Users/boris/code/lewagon/middleman-airbnb/source/stylesheets/pages/_flat.scss */
 #flat-description {
   background: #F5F5F5;

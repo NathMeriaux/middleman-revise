@@ -2,24 +2,109 @@
 <% flat = data.flats[owner] %>
 
 <!-- Inject flat data in template -->
-<div class="banner-flat" style="background-image: url('<%= image_path flat.picture %>');"></div>
-  <div class="header-flat">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-          <div class="header-flat-details">
-            <div class="header-flat-owner align-center">
+<div class="banner-flat" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%), url('<%= image_path flat.picture %>'); height: 30vh; background-position: center;">
+</div>
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="card-profile">
+          <div class="card-profile-picture text-center">
               <%= image_tag flat.owner_picture, class: "img-circle" %>
               <p><%= flat.owner_name %></p>
-              <h1><%= flat.summary %></h1>
-              <p><%= flat.city %></p>
-            </div>
+          </div>
+          <div class="card-profile-details">
+            <h1><%= flat.name %></h1>
+            <p><%= flat.city %></p>
+            <% flat.rating.times do %>
+              <i class="fa fa-heart" style="color:#EE5F5B;"></i>
+            <% end %>
+            <% (5 - flat.rating).times do %>
+            <i class="fa fa-heart" style="color:#CACCCD;"></i>
+            <% end %>
           </div>
         </div>
-
-        <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-
-        </div>
-
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <form action="">
+          <h4>Réservez ce logement</h4>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-xs-6">
+              <input type="text" placeholder="date d'arrivée" class="form-control datepicker">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" placeholder="date de départ" class="form-control datepicker">
+            </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <select name="" id="" class="form-control">
+              <option value="1">1 personne</option>
+              <option value="2">2 personnes</option>
+              <option value="3">3 personnes</option>
+            </select>
+          </div>
+          <input type="submit" value="Je réserve!", class="btn btn-danger" style="width:100%;">
+        </form>
+      </div>
     </div>
   </div>
+</div>
+<div id="body-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h2>A propos de ce logement</h2>
+        <p>Cet appartement est situé en coeur de ville, restaurants et musées accessibles à pied.
+        </p>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <p>Le logement</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Nombre de places : <strong>2</strong></li>
+              <li>Salle de bain : <strong>1</strong></li>
+              <li>Type de matelas : <strong>ferme</strong></li>
+              <li>Chambre : <strong>1</strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Nombre de pièces : <strong>2</strong></li>
+              <li>Lit : <strong>2 places</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <p>Facilités</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>
+                <strong><i class="fa fa-cutlery"></i></strong> Cuisine
+              </li>
+              <li>
+                <strong><i class="fa fa-wifi"></i></strong> Wifi
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>
+                <strong><i class="fa fa-television"></i></strong> Télévision
+              </li>
+              <li>
+                <strong><i class="fa fa-subway"></i></strong> Métro Gambetta à 3mn
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

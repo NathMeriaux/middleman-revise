@@ -44,3 +44,29 @@
 .card-link:hover{
   opacity: 0.1;
 }
+
+.card-profile {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  color:#4C4C4C;
+  margin-top: 50px;
+}
+
+.card-profile img {
+  width: 20px;
+}
+
+.card-profile h1 {
+  font-size: 17px;
+  margin-top: 0;
+}
+
+.card-profile p {
+  font-size: 14px;
+  color: #E6E6E6;
+}
+
+.card-profile-details {
+  padding-left: 20px;
+}

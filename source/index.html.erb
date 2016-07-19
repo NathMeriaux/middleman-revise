@@ -9,11 +9,11 @@ title: Le Wagon Middleman boilerplate
         <form class="form-inline">
           <div class="form-group">
             <label for="exampleInputName2"></label>
-            <input type="text" class="form-control input-lg" id="exampleInputName2" placeholder="CheckIn">
+            <input type="text" class="form-control input-lg datepicker" id="exampleInputName2" placeholder="CheckIn">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail2"></label>
-            <input type="email" class="form-control input-lg" id="exampleInputEmail2" placeholder="CheckOut">
+            <input type="email" class="form-control input-lg datepicker" id="exampleInputEmail2" placeholder="CheckOut">
           </div>
           <select class="form-control input-lg">
             <option>1 personne</option>
@@ -30,7 +30,7 @@ title: Le Wagon Middleman boilerplate
     <!-- Your features code -->
 <div class="container">
 
-  <div class="text-center padded features">
+  <div class="text-center" id="features">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
         <%= image_tag "globe.png" %>
@@ -61,7 +61,7 @@ title: Le Wagon Middleman boilerplate
 </div>
 
 
-<div class="wrapper-grey padded">
+<div class="wrapper-grey">
   <div class="container">
   <h2 class="text-center">Votre prochain voyage</h2>
     <div class="row">

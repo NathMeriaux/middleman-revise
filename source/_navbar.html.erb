@@ -1,7 +1,7 @@
-<div class="navbar-wagon">
+<div class="navbar-wagon navbar-fixed-top text-center">
   <!-- Logo -->
   <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "lewagon.png" %>
+    <%= image_tag "Jungle-Web-Conseil.jpg", alt: "Nathalie Meriaux - Jungle Web" %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -21,7 +21,12 @@
 
     <!-- Text link -->
     <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a> -->
+
     <%= link_to "l'équipe", "team.html", class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <% link_to "team.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+    <i class="fa fa-star text-center"></i>l'équipe
+    <%end%>
 
     <!-- Notification link-->
     <a href="" class="navbar-wagon-item navbar-wagon-link">

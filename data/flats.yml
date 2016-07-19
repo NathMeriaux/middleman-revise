@@ -6,6 +6,7 @@ seb:
   summary: Lumineux avec jardin
   city: Lille, France
   wifi: true
+  rating: 4
 romain:
   owner_name: Romain Paillard
   picture: card-paris.jpg
@@ -14,6 +15,7 @@ romain:
   summary: Typique et cosy
   city: Paris, UK
   wifi: false
+  rating: 3
 anne:
   owner_name: Anne Testing
   picture: card-brussels.jpeg
@@ -22,6 +24,7 @@ anne:
   summary: Idéalement situé
   city: Bruxelles, UK
   wifi: false
+  rating: 5
 agnes:
   owner_name: teste
   picture: card-london.jpeg
@@ -30,4 +33,5 @@ agnes:
   summary: Idéalement situé
   city: Londres, UK
   wifi: false
+  rating: 4
 
